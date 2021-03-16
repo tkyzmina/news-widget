@@ -250,7 +250,7 @@ const initApp = () => {
   let restNews;
   let nextComments;
   const apiKey = '8704a4b4a91241cbb6d8eae96cc44966';
-  const url = `http://newsapi.org/v2/top-headlines?country=ru&category=sport&apiKey=${apiKey}`;
+  const url = `https://newsapi.org/v2/top-headlines?country=ru&category=sport&apiKey=${apiKey}`;
 
 
   document.addEventListener("DOMContentLoaded", function () {
