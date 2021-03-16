@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Project Name - описание">
+
+<!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+<!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+
+<!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
+<link color="#c84659" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+<link href="favicon/favicon.ico" rel="shortcut icon">
+<meta content="#ffffff" name="msapplication-TileColor">
+<meta content="favicon/browserconfig.xml" name="msapplication-config">
+<meta content="#ffffff" name="theme-color">
+ -->
+
+<!-- используйте только для шрифта находящегося на первом экране -->
+
+<!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>Новости</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="news">
+      <div class="container">
+        <h1 class="page-header">Новости есть?</h1>
+        <button class="btn btn-show">Показать</button>
+        <ul class="news__list">
+        </ul>
+        <button class="btn btn-more btn--hidden">Показать еще новостей</button>
+        <template id="news-item">
+          <li class="news__item">
+            <button class="news__btn btn" type="button" aria-label="Отметить как прочитанное">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <defs />
+                <path
+                  d="M23.7 6.3L22 4.6a1 1 0 00-1.4 0l-9.3 9.3-3.7-3.7a1 1 0 00-1.5 0l-1.7 1.7a1 1 0 000 1.4l6 6c.3.3.6.4.9.4s.6-.1.8-.3L23.7 7.8c.4-.4.4-1 0-1.5zM11.4 18.6c0 .1-.2.1-.2 0l-6-6 1.7-1.7 4 4c.2.2.6.2.7 0l9.7-9.6L23 7 11.4 18.6z" />
+                <path
+                  d="M6.3 19.4c.3.2.5.3.9.3s.6-.1.8-.3a.5.5 0 00-.7-.8H7l-6-6 1.7-1.7a.5.5 0 00.7-.7 1 1 0 00-1.4 0L.3 11.9a1 1 0 00-.3.7c0 .3.1.5.3.7l6 6zM10.7 11.8L17 5.3a.5.5 0 00.8-.7 1 1 0 00-1.5 0L10 11.1a.5.5 0 00.8.7z" />
+              </svg>
+
+            </button>
+            <a href="https://ura.news/news/1052475819" class="news__link" target="_blank" aria-label="Подробнее">
+              <div class="news__content">
+                <div class="news__text">
+                  <h3 class="news__title">"Ученые назвали пять безобидных симптомов рака - URA.Ru"</h3>
+                  <p class="news__source">Ura.news</p>
+                  <p class="news__author">Brd Usjera</p>
+                  <div class="news__date">
+                    <span class="news__year"></span>
+                    <span class="news__time"></span>
+                  </div>
+                </div>
+                <div class="news__img">
+                  <div class="news__img-wrapper">
+                    <img
+                      src="https://s.ura.news/images/news/upload/smm/2021/03/15/facebook_5de26bb8580ce6ac32e9a9cf9d2dbe5f.jpg"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </template>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
