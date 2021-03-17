@@ -249,7 +249,7 @@ const initApp = () => {
   const newsToShow = 5;
   let restNews;
   let nextComments;
-  const apiKey = '8704a4b4a91241cbb6d8eae96cc449660';
+  const apiKey = '8704a4b4a91241cbb6d8eae96cc44966';
   const url = `https://newsapi.org/v2/top-headlines?country=ru&category=sport&apiKey=${apiKey}`;
 
 
